@@ -10,6 +10,7 @@ import api.*;
 import api.endpoint.GorestApiEndpoint;
 import api.endpoint.ReqresApiEndpoint;
 import base.BaseClass;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import pages.ReqresHomePage;
 import utility.FileReaderUtility;
@@ -27,6 +28,8 @@ public class TestReqresApi extends BaseClass
 		System.out.println("\u001b[1mExecution Starts for Test---------> \u001b[0m" +(i++));
 		
 	}
+	
+	
 	@AfterMethod
 	public void afterEachMethod()
 	{
@@ -74,6 +77,10 @@ public class TestReqresApi extends BaseClass
 		
 		Response response = ReqresApiEndpoint.createUser(FileReaderUtility.readJsonFile("C:\\E\\workspaces\\workSpace_RestAssured_P1\\UIAutomationSelenium1\\src\\test\\resources\\testdata\\jsonData.json"),"https://reqres.in/api/users"+createUserUrl);
 		response.then().log().all();
+		
+		JsonPath jsonPath = response.jsonPath();
+		String id =jsonPath.getString("id");
+		System.out.println(id);
 	}
 	
 	

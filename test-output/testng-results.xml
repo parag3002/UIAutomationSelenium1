@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-15T21:39:52 IST" name="Default suite" finished-at="2024-01-15T21:40:04 IST" duration-ms="12044">
+  <suite started-at="2024-01-15T23:52:47 IST" name="Default suite" finished-at="2024-01-15T23:53:03 IST" duration-ms="16461">
     <groups>
     </groups>
-    <test started-at="2024-01-15T21:39:52 IST" name="Default test" finished-at="2024-01-15T21:40:04 IST" duration-ms="12044">
+    <test started-at="2024-01-15T23:52:47 IST" name="Default test" finished-at="2024-01-15T23:53:03 IST" duration-ms="16461">
       <class name="testcase.TestReqresApi">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.TestReqresApi@b2c9a9c]" started-at="2024-01-15T21:39:52 IST" name="setup" finished-at="2024-01-15T21:39:56 IST" duration-ms="4505" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.TestReqresApi@b2c9a9c]" started-at="2024-01-15T23:52:47 IST" name="setup" finished-at="2024-01-15T23:52:51 IST" duration-ms="4357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:testcase.TestReqresApi@b2c9a9c]" started-at="2024-01-15T21:39:56 IST" name="beforeEachMethod" finished-at="2024-01-15T21:39:56 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:testcase.TestReqresApi@b2c9a9c]" started-at="2024-01-15T23:52:51 IST" name="beforeEachMethod" finished-at="2024-01-15T23:52:51 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachMethod -->
-        <test-method signature="testCreateUser()[pri:4, instance:testcase.TestReqresApi@b2c9a9c]" started-at="2024-01-15T21:39:56 IST" name="testCreateUser" finished-at="2024-01-15T21:40:03 IST" duration-ms="6486" status="PASS">
+        <test-method signature="testCreateUser()[pri:4, instance:testcase.TestReqresApi@b2c9a9c]" started-at="2024-01-15T23:52:51 IST" name="testCreateUser" finished-at="2024-01-15T23:53:02 IST" duration-ms="11106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateUser -->
-        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:testcase.TestReqresApi@b2c9a9c]" started-at="2024-01-15T21:40:03 IST" name="afterEachMethod" finished-at="2024-01-15T21:40:03 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:testcase.TestReqresApi@b2c9a9c]" started-at="2024-01-15T23:53:02 IST" name="afterEachMethod" finished-at="2024-01-15T23:53:02 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachMethod -->
-        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testcase.TestReqresApi@b2c9a9c]" started-at="2024-01-15T21:40:03 IST" name="tearDownDriver" finished-at="2024-01-15T21:40:04 IST" duration-ms="1016" status="PASS">
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testcase.TestReqresApi@b2c9a9c]" started-at="2024-01-15T23:53:02 IST" name="tearDownDriver" finished-at="2024-01-15T23:53:03 IST" duration-ms="964" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownDriver -->
