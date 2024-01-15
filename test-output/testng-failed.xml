@@ -5,7 +5,9 @@
     <classes>
       <class name="testcase.TestReqresApi">
         <methods>
-          <include name="requresHomePage"/>
+          <include name="fetchCreateUserPayload"/>
+          <include name="tearDownDriver"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- testcase.TestReqresApi -->
     </classes>

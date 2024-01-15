@@ -37,6 +37,7 @@ import net.sf.saxon.exslt.Math;
 
 
 import api.*;
+import api.payload.ReqresCreateUserPayload;
 import utility.*;
 
 public class ReqresApiEndpoint 
@@ -51,4 +52,28 @@ public class ReqresApiEndpoint
 					.get(PropertyReader.apiEndpoints("reqresBaseUrl")+listUdersUrl);
 				return response;
 	}
+	
+	public static Response createUser(ReqresCreateUserPayload payload)
+	{
+		Response response =
+				given()
+					.contentType(ContentType.JSON)
+					.body(payload)
+				.when()
+					.post("");
+		return response;
+	}
+	
+	public static Response createUser(String payload, String path)
+	{
+		Response response =
+				given()
+					.contentType(ContentType.JSON)
+					.body(payload)
+				.when()
+					.post(path);
+		return response;
+	}
+	
+	
 }
