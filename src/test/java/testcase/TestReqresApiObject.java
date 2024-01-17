@@ -19,10 +19,16 @@ import utility.FileReaderUtility;
 import utility.FileWriterUtility;
 
 
-public class TestReqresApi extends BaseClass
+public class TestReqresApiObject extends BaseClass
 {
 	
 	int i=1;
+	ReqresHomePage reqObj;
+	
+	TestReqresApiObject()
+	{
+		reqObj = new ReqresHomePage();
+	}
 	
 	@BeforeMethod
 	public void beforeEachMethod()
@@ -43,7 +49,7 @@ public class TestReqresApi extends BaseClass
 	@Test(priority=1)
 	public void requresHomePage()
 	{
-		ReqresHomePage.reqresHomePage();
+		reqObj.reqresHomePage1();
 
 	}
 	
@@ -53,8 +59,7 @@ public class TestReqresApi extends BaseClass
 	@Test(priority=2)
 	public void fetchListUsersUrl()
 	{
-		ReqresHomePage.reqresHomePage();
-		listUsersUrl = ReqresHomePage.fetchListUsersUrl();
+		listUsersUrl = reqObj.reqresHomePage1().fetchListUsersUrl1(); // object chaining
 		System.out.println(listUsersUrl);
 	}
 	
@@ -69,10 +74,10 @@ public class TestReqresApi extends BaseClass
 	@Test(priority = 4)
 	public void testCreateUser()
 	{
-		ReqresHomePage.reqresHomePage();
-		String createUserUrl = ReqresHomePage.fetchCreateUserUrl();
+		
+		String createUserUrl = reqObj.reqresHomePage1().fetchCreateUserUrl1();
 		System.out.println("Create Usr URL ====>> "+createUserUrl);
-		String createUserPayload = ReqresHomePage.fetchCreateUserPayload();
+		String createUserPayload = reqObj.fetchCreateUserPayload1();
 		System.out.println(createUserPayload);
 		
 		FileWriterUtility.writeFile(createUserPayload);
